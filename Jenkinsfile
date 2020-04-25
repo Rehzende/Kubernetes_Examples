@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        docker { image 'docker' }
+    }
     stages {
          stage('Rancher Help') {
             agent {
